@@ -1,0 +1,147 @@
+@media (max-width: 576px) {
+    .content {
+        display: flex;
+        width: 375px;
+        flex-direction: column;
+        text-align: left;
+    }
+    .menu {
+        display: none;
+    }
+    .main li {
+        margin-left: 0;
+        list-style-type: disc;
+    }
+
+    li {
+        list-style-type: none;
+        margin-left: -40px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .slide li {
+        padding: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+        text-align: left;
+    }
+
+    .slide li:last-child { 
+        border-bottom: none;
+    }
+
+    nav {
+        background: #D64200;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 375px;
+    }
+
+    .title_name {
+        margin-top: 0;
+    }
+
+    .highlight_title_mob li:hover{
+        background: rgba(255, 182, 159, 0.30);
+    }
+
+    .highlight_title_mob li {
+        transition: background 0.3s ease;
+    }
+  
+    .margines_mob {
+        margin-left: -10%;
+        width: 95%;
+    }
+
+    .menu_title_mob {
+        color : white;
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        cursor : pointer;
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .menu_title::after {
+        float: right;
+        right: 10%;
+        content: "+";  
+    }
+
+    .slide {
+        clear:both;
+        width:100%;
+        height:0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
+    }
+
+    .slide li {
+        padding : 30px;
+    }
+
+    #touch {
+        position: absolute; 
+        opacity: 0; 
+        height: 0px;
+    }    
+
+    #touch:checked + .slide {
+        height: 100%;
+    } 
+
+     .mobile_menu {
+        display: block;
+    }
+
+    .logo-mobile {
+        margin-right: -30px;
+        margin-bottom: 18px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+
+    .paragraph p {
+        display: none;
+    }
+
+    .paragraph p:not(:first-child) {
+        display: none; /* Скрыть все пункты меню, кроме первого */
+    }
+
+    .icon {
+        display: block;
+        margin-right: 18px;
+        margin-left: 90%;
+        margin-top: 20px;
+    }
+
+    .title_name {
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .description {
+        text-align: left;
+        font-size: 19px;
+        font-weight: 400;
+        width: 375px;
+    } 
+    
+    .share_text {
+        width: 100%;
+    }
+   
+}
+
